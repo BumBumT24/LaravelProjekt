@@ -11,6 +11,38 @@
                         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                             {{ __('Dashboard') }}
                         </x-nav-link>
+                        <x-nav-link :href="route('students.index')" :active="request()->routeIs('students.index')">
+                            {{ __('Student') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('classes.index')" :active="request()->routeIs('classes.index')">
+                            {{ __('Classes') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('subjects.index')" :active="request()->routeIs('subjects.index')">
+                            {{ __('Subjects') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('teachers.index')" :active="request()->routeIs('teachers.index')">
+                            {{ __('Teachers') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('oceny.index')" :active="request()->routeIs('oceny.index')">
+                            {{ __('Grades') }}
+                        </x-nav-link>
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('students.index') }}">Lista Uczniów</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('classes.index') }}">Lista Klas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('subjects.index') }}">Lista Przedmiotow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('teachers.index') }}">Lista Nauczycieli</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('oceny.index') }}">Lista Ocen</a>
+                        </li>
+                        -->
                     @endauth
                     @admin
                     <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
@@ -18,6 +50,7 @@
                     </x-nav-link>
                     @endadmin
                 </div>
+                
             </div>
 
             <!-- Settings Dropdown -->
@@ -71,6 +104,21 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('students.index')" :active="request()->routeIs('students.index')">
+                {{ __('Student') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('classes.index')" :active="request()->routeIs('classes.index')">
+                {{ __('Classes') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('subjects.index')" :active="request()->routeIs('subjects.index')">
+                {{ __('Subjects') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('teachers.index')" :active="request()->routeIs('teachers.index')">
+                {{ __('Teachers') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('oceny.index')" :active="request()->routeIs('oceny.index')">
+                {{ __('Grades') }}
             </x-responsive-nav-link>
         </div>
 
