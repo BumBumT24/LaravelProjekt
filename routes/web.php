@@ -8,12 +8,16 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\ClassController;
 use App\Http\Controllers\OcenaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\AdminMiddleware;
+use App\Http\Middleware\DyrektorMiddleware;
+use App\Http\Middleware\NauczycielMiddleware;
+use App\Http\Middleware\UserMiddleware;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'admin')->group(function () {
     Route::get('/dashboard', function(){
         return view('dashboard');
     })->name('dashboard');
@@ -39,5 +43,51 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::put('/admin/users/{user}', [UserController::class, 'update'])->name('admin.users.update');
     Route::delete('/admin/users/{user}', [UserController::class, 'destroy'])->name('admin.users.destroy');
 });
+
+
+
+// Trasy dla dyrektora
+Route::middleware(['auth', 'dyrektor'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('students', StudentController::class); // Pełny CRUD
+    Route::resource('classes', ClassController::class); // Pełny CRUD
+    Route::resource('subjects', SubjectController::class); // Pełny CRUD
+    Route::resource('teachers', TeacherController::class); // Pełny CRUD
+    Route::resource('oceny', OcenaController::class); // Pełny CRUD
+});
+// Trasy dla nauczyciela
+Route::middleware(['auth', 'nauczyciel'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('students', StudentController::class)->only(['index', 'show']);
+    Route::resource('classes', ClassController::class)->only(['index', 'show']);
+    Route::resource('subjects', SubjectController::class)->only(['index', 'show']);
+    Route::resource('teachers', TeacherController::class)->only(['index', 'show']);
+    Route::resource('oceny', OcenaController::class);
+});
+// Trasy dla user
+Route::middleware(['auth', 'user'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('students', StudentController::class)->only(['index', 'show']);
+    Route::resource('classes', ClassController::class)->only(['index', 'show']);
+    Route::resource('subjects', SubjectController::class)->only(['index', 'show']);
+    Route::resource('teachers', TeacherController::class)->only(['index', 'show']);
+    Route::resource('oceny', OcenaController::class)->only(['index', 'show']);
+});
+
 
 require __DIR__.'/auth.php';

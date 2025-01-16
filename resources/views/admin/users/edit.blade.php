@@ -7,33 +7,36 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
+            <div class="bg-white ">
+                <div class="main">
                     <!-- Formularz edycji użytkownika -->
-                    <form method="POST" action="{{ route('admin.users.update', $user) }}">
+                    <form method="POST" action="{{ route('admin.users.update', $user) }}" class="form">
                         @csrf
                         @method('PUT')
 
                         <div class="mb-4">
-                            <label for="name" class="block text-sm font-medium text-gray-700">Imię</label>
+                            <label for="name" class="tyt">Imię</label>
                             <input type="text" name="name" id="name" value="{{ $user->name }}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                         </div>
 
                         <div class="mb-4">
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <label for="email" class="tyt">Email</label>
                             <input type="email" name="email" id="email" value="{{ $user->email }}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                         </div>
 
                         <div class="mb-4">
-                            <label for="role" class="block text-sm font-medium text-gray-700">Rola</label>
+                            <label for="role" class="tyt">Rola</label>
                             <select name="role" id="role" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                                 <option value="user" {{ $user->role === 'user' ? 'selected' : '' }}>Użytkownik</option>
                                 <option value="admin" {{ $user->role === 'admin' ? 'selected' : '' }}>Admin</option>
+                                <option value="nauczyciel" {{ $user->role === 'nauczyciel' ? 'selected' : '' }}>Nauczyciel</option>
+                                <option value="dyrektor" {{ $user->role === 'dyrektor' ? 'selected' : '' }}>Dyrektor</option>
+
                             </select>
                         </div>
 
                         <!-- Przycisk zapisywania -->
-                        <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        <button type="submit" class="btn btn-primary btn-sm">
                             Zapisz zmiany
                         </button>
                     </form>
@@ -44,7 +47,7 @@
                         @method('DELETE')
 
                         <!-- Przycisk usuwania -->
-                        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                        <button type="submit" class="btn btn-danger btn-sm">
                             Usuń użytkownika
                         </button>
                     </form>

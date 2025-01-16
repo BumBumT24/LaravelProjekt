@@ -11,22 +11,26 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{ asset('styles.css') }}">
-
-        <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="body">
+        
         <div class="main">
             @include('layouts.navigation')
 
+            <!-- Page Heading -->
+            @isset($header)
+                <header class="bg-white shadow">
+                    <div class="nav">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endisset
+
             <!-- Page Content -->
-            <div class="main">
-            <main class="dosh" >
-                <div class="log">
-                    {{$slot}}
-                </div>
+            <main class="main">
+                @yield('content')
             </main>
-            </div>
         </div>
         <footer class="footer">
             <p>&copy; {{ date('Y') }} Szkoła. Wszelkie prawa zastrzeżone.</p>

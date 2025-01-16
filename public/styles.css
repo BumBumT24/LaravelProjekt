@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.accessibility-tools {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.accessibility-tools button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.accessibility-tools button:hover {
+    background-color: #0056b3;
+}
+
+/*highcontrart*/
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.body.high-contrast{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .navTekst{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .navTekst1{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .main{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .nav{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .footer{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .container{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast table{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .thead{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .tr{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast th{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast h1{
+    background-color: black;
+    color: #fff;
+}
+.body.high-contrast .btn-primary {
+    background-color: #fff;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+}
+.body.high-contrast .btn-primary-a {
+    background-color: #fff;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+}
+.body.high-contrast .btn-warning {
+    background-color: #fff;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+}
+.body.high-contrast .btn-danger {
+    background-color: #fff;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+}
+.body.high-contrast .dosc {
+    background-color: #fff;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+}
+.body.high-contrast .paginacja a {
+    background-color: #fff;
+    color: black;
+    
+    border-width: 2px;
+}
+.body.high-contrast .paginacja span {
+    background-color: #fff;
+    color: black;
+    
+    border-width: 2px;
+}
+.body.high-contrast .form {
+    background-color: black;
+    color: Black;
+    
+}
+.body.high-contrast .formm {
+    background-color: black;
+    color: Black;
+    
+}
+.body.high-contrast .tyt{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast .form-control{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast .dosh{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast .log{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast .dash{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast h2{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast p{
+    background-color: black;
+    color: #fff;
+    
+}
+.body.high-contrast input{
+    background-color: black;
+    color: #fff;
+    
+}
+/*highcontrart*/
+/* czccionka */
+.large-font {
+    font-size: 1.5rem;
+}
+.body.large-font input{
+    font-size: 1.5rem;
+    
+}
+.body.large-font{
+    font-size: 1.5rem;
+}
+.body.large-font .navTekst{
+    font-size: 1.5rem;
+}
+.body.large-font .navTekst1{
+    font-size: 1.5rem;
+}
+.body.large-font .main{
+    font-size: 1.5rem;
+}
+.body.large-font .nav{
+    font-size: 1.5rem;
+}
+.body.large-font .footer{
+    font-size: 1.5rem;
+}
+.body.large-font .container{
+    font-size: 1.5rem;
+}
+.body.large-font table{
+    font-size: 1.5rem;
+}
+.body.large-font .thead{
+    font-size: 1.5rem;
+}
+.body.large-font .tr{
+    font-size: 1.5rem;
+}
+.body.large-font th{
+    font-size: 1.5rem;
+}
+.body.large-font h1{
+    font-size: 3rem;
+}
+.body.large-font .btn-primary {
+    font-size: 1.5rem;
+}
+.body.large-font .btn-primary-a {
+    font-size: 1.5rem;
+    height: 52px;
+}
+
+.body.large-font .btn-warning {
+    font-size: 1.5rem;
+}
+.body.large-font .btn-danger {
+    font-size: 1.5rem;
+}
+.body.large-font .dosc {
+    font-size: 1.5rem;
+}
+.body.large-font .nag {
+    font-size: 3rem;
+}
+.body.large-font .paginacja span {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 48px;
+}
+.body.large-font .paginacja a {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 48px;
+}
+
+.body.large-font .form {
+    font-size: 1.5rem;
+}
+.body.large-font .formm {
+    font-size: 1.5rem;
+    
+}
+.body.large-font .tyt{
+    font-size: 1.5rem;
+    
+}
+.body.large-font .form-control{
+    font-size: 1.5rem;
+    
+}
+.body.large-font .dosh{
+    font-size: 1.5rem;
+    
+}
+.body.large-font .log{
+    font-size: 1.5rem;
+    
+}
+.body.large-font .dash{
+    font-size: 1.5rem;
+    
+}
+.body.large-font h2{
+    font-size: 1.5rem;
+    
+}
+.body.large-font p{
+    font-size: 1.5rem;
+    
+}
+.body.large-font a{
+    font-size: 2rem;
+    
+}
+
+/* czccionka */
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Wysokość całego widoku */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-color: #FFFFF2;
+}
+.navTekst1 {
+    display: flex;
+    justify-content: flex-start; /* Nawigacja wyrównana do prawej */
+    align-items: center;
+    gap: 2rem; /* Odstęp między linkami */
+    font-size: 1.2rem; /* Rozmiar tekstu */
+    background-color: #364958; /* Kolor tła */
+    color: #FFFFF2; /* Kolor tekstu */
+    padding: 1rem 2rem; /* Wewnętrzne marginesy */
+    position: fixed; /* Pozycjonowanie na stałe */
+    top: 0;
+    margin-left: 50px;
+    width: 100%; /* Rozciągnięcie na całą szerokość */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Zapobiega zasłanianiu przez inne elementy */
+}
+
+.navTekst1 a {
+    text-decoration: none;
+    color: #FFFFF2;
+    font-weight: 600;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.navTekst1 a:hover {
+    background: linear-gradient(90deg, #111D4A, #111D4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #364958;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #8C6057;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.guest{
+    background-color: #f4f4f4;
+}
+.hero-content .btn:hover {
+    background-color: #F5853F;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #364958;
+    color: #FFF;
+    font-size: 0.9rem;
+    margin-top: auto; /* Utrzymuje stopkę na dole */
+    
+    
+}
+
+/* Wyśrodkowanie tabeli na stronie */
+.main{
+    background-color: #FFFFF2;
+    height: 100%;
+}
+.dosh{
+    background-color: #FFFFF2;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Wyśrodkowanie poziome */
+    align-items: center;      /* Wyśrodkowanie pionowe */
+}
+.paginacja {
+    display: flex; /* Ustawia elastyczne pudełka dla dzieci */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    align-items: center; /* Wyśrodkowanie pionowe */
+    margin-top: 30px; /* Odstęp od góry */
+}
+
+.paginacja a {
+
+    text-decoration: none; /* Usuń podkreślenia */
+    color: #fff; /* Kolor linków */
+    padding: 5px 10px; /* Wewnętrzne marginesy */
+    background-color: #364958;
+    transition: all 0.3s ease; /* Animacja zmiany stylu */
+}
+
+.paginacja a:hover {
+    background-color: #111D4A; /* Kolor tła podczas najechania */
+    color: #fff; /* Kolor tekstu podczas najechania */
+}
+
+.paginacja .active {
+    font-weight: bold; /* Pogrubienie aktywnej strony */
+    color: #fff; /* Kolor tekstu dla aktywnej strony */
+    background-color: #111D4A; /* Tło dla aktywnej strony */
+}
+
+.h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.tyt {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 2rem;
+    
+    padding-bottom: 0.5rem;
+}
+.tyt1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5rem;
+    
+    padding-bottom: 0.5rem;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px; /* Maksymalna szerokość formularza */
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.formm {
+    width: 100%;
+    max-width: 1000px; /* Maksymalna szerokość formularza */
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20%; /* Pełna wysokość widoku */
+    
+}
+.containerr4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20%; /* Pełna wysokość widoku */
+    flex-direction: column;
+}
+
+.dash {
+    background-color: #364958;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ddd6cb;
+    padding: 1rem;
+    text-align: center; /* Wyśrodkowanie treści */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* Odstęp między elementami */
+    max-width:calc(33.333% - 2rem);
+    min-width: 500px;
+    margin-left: 17%;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: #364958;
+    display: flex;
+    
+}
+.log{
+    background-color: #FFFFF2;
+}
+.navTekst {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Wyrównanie nawigacji do prawej strony */
+    align-items: end;
+    gap: 2rem; /* Odstępy między elementami */
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem; /* Rozmiar czcionki */
+    background-color: #364958; /* Tło nawigacji */
+    padding: 1rem 2rem; /* Dodanie marginesów wewnętrznych */
+    
+}
+
+.navTekst a {
+
+    font-family:  sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFFFF2;
+    font-weight: 600; /* Pogrubienie dla lepszej czytelności */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.navTekst a:hover,
+.navTekst a:active {
+    background: linear-gradient(90deg, #111D4A, #111D4A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 18px #111D4A;
+    border-color: #111D4A;
+}
+
+.active {
+    background: linear-gradient(90deg, #111D4A, #111D4A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: #111D4A;
+}
+
+/* Styl rozwijanego menu */
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    background: #2c2c2c;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu x-nav-link {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ddd6cb;
+}
+
+.dropdown-menu x-nav-link:hover {
+    text-shadow: 0 0 10px rgba(248, 190, 42, 0.8);
+    background: none; /* Bez wypełnienia */
+}
+.container {
+    width: 80%;
+    /* Możesz zmienić szerokość kontenera w zależności od potrzeb */
+    margin: 0 auto;
+    /* Wyśrodkowanie kontenera */
+    padding: 20px;
+    background-color: #FFFFF2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    /* Tło dla tabeli */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Cień dla tabeli */
+}
+
+/* Styl dla nagłówków tabeli */
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Styl dla przycisków */
+.btn {
+    display: inline-block;
+    /* Ustawienie przycisków w jednej linii */
+    padding: 8px 15px;
+    margin: 5px;
+    /* Odstęp między przyciskami */
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.btn-primary {
+    background-color: #8C6057;
+    color: white;
+    border: none;
+    
+}
+.btn-primary-a {
+    background-color: #8C6057;
+    color: white;
+    border: none;
+    
+}
+
+.btn-warning {
+    background-color: #F5853F;
+    color: white;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #92140C;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+    opacity: 0.8;
+    /* Efekt hover */
+}
+
+/* Styl dla formularza i przycisków na górze tabeli */
+.dosc {
+    display: inline-block;
+    background-color: #8C6057;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+}
+
+.dosc:hover {
+    opacity: 0.8;
+}
+
+/* Styl dla numeracji tabeli */
+td,
+th {
+    text-align: center;
+}
+
+/* Kontener dla nagłówka i formularza wyszukiwania */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    /* Rozstawienie elementów na przeciwległych końcach */
+    align-items: center;
+    /* Wyrównanie elementów w pionie */
+    margin-bottom: 20px;
+}
+
+/* Nagłówek - Lista ocen */
+.container-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Formularz wyszukiwania i przycisk Dodaj ocenę */
+.search-form,
+.add-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-form .input-group {
+    display: flex;
+    justify-content: center;
+    /* Zmienna szerokość formularza */
+    width: 100%;
+    align-items: baseline;
+}
+
+.input-group input,
+.input-group button {
+    height: 40px;
+    
+    /* Jednolita wysokość formularza */
+}
+
+/* Dostosowanie przycisku Dodaj ocenę */
+.dosc {
+    background-color: #8C6057;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.dosc:hover {
+    opacity: 0.8;
+    /* Efekt hover */
+}
+
+
+
+.dash h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFF2; /* Jasny akcent kolor */
+}
+p{
+    color: #FFFFF2;
+}
+
+.dash p {
+    font-size: 1.2rem;
+    color: #ddd6cb;
+    margin: 0.5rem 0;
+}
+
+.dash .mt-4 {
+    margin-top: 1rem;
+}
+
+.dash .mt-2 {
+    margin-top: 0.5rem;
+}
+
+.grades-container {
+    display: flex;
+    flex-wrap: wrap; /* Umożliwia zawijanie wierszy */
+    gap: 2rem; /* Odstępy między wizytówkami */
+    justify-content: flex-start; /* Wyrównanie do lewej */
+}
+
+.grade-card {
+    flex: 1 1 calc(33.333% - 2rem); /* Maks. 3 karty w rzędzie */
+    background-color: #364958; /* Ciemne tło */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ddd6cb;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: calc(33.333% - 2rem); /* Maksymalna szerokość */
+    min-width: 300px; /* Minimalna szerokość karty */
+    box-sizing: border-box; /* Uwzględnia padding i marginesy w szerokości */
+}
+
+.grade-card h4.subject-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FFFFF2; /* Jasny akcent kolor */
+}
+
+.grade-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grade-card li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #444; /* Linia oddzielająca */
+    padding-bottom: 0.5rem;
+}
+
+.grade-card li:last-child {
+    border-bottom: none; /* Usuń linię dla ostatniego elementu */
+}
+
+.grade-card p {
+    margin: 0.25rem 0;
+}
+
+/* Ujednolicenie wysokości wszystkich kart */
+.grades-container > .grade-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.grades-container {
+    align-items: stretch; /* Rozciąga wszystkie karty do tej samej wysokości */
+}

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="nav">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,7 +6,7 @@
                 <!-- Logo -->
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="navTekst">
                     @auth
                         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                             {{ __('Dashboard') }}
@@ -26,35 +26,20 @@
                         <x-nav-link :href="route('oceny.index')" :active="request()->routeIs('oceny.index')">
                             {{ __('Grades') }}
                         </x-nav-link>
-                        <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('students.index') }}">Lista Uczniów</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('classes.index') }}">Lista Klas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('subjects.index') }}">Lista Przedmiotow</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('teachers.index') }}">Lista Nauczycieli</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('oceny.index') }}">Lista Ocen</a>
-                        </li>
-                        -->
+                        @if(auth()->user()->role === 'admin')
+                        <x-nav-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.index')">
+                            {{ __('Admin') }}
+                        </x-nav-link>
+                        @endif
+                        
                     @endauth
-                    @admin
-                    <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
-                        {{ __('Admin') }}
-                    </x-nav-link>
-                    @endadmin
+                    
                 </div>
                 
             </div>
 
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
+            <div class="hidden sm:flex sm:items-center sm:ms-6 ">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
@@ -119,6 +104,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('oceny.index')" :active="request()->routeIs('oceny.index')">
                 {{ __('Grades') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.index')">
+                {{ __('Admin') }}
             </x-responsive-nav-link>
         </div>
 

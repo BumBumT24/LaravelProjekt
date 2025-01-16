@@ -8,8 +8,25 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index(){
-        $users = User::where('role','user')->get();
+    public function index(Request $request)
+    {
+        $role = $request->input('role'); // Pobiera rolę z parametru żądania
+        $search = $request->input('search'); // Pobiera zapytanie wyszukiwania
+
+        $query = User::query();
+
+        if ($role) {
+            $query->where('role', $role); // Filtrowanie według roli
+        }
+
+        if ($search) {
+            $query->where(function ($query) use ($search) {
+                $query->where('name', 'like', '%' . $search . '%')
+                    ->orWhere('email', 'like', '%' . $search . '%');
+            });
+        }
+
+        $users = $query->paginate(50); // Zastosowanie paginacji
 
         return view('admin.users.index', compact('users'));
     }

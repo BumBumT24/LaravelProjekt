@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
             SubjectsTableSeeder::class, 
             StudentsTableSeeder::class,
             TeacherSubjectTableSeeder::class,
+            OcenaTableSeeder::class,
+            UsersTableSeeder::class,
         ]);
     }
 }
